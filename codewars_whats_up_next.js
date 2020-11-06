@@ -7,6 +7,10 @@ nextItem([1, 2, 3, 4, 5, 6, 7], 3) # 4
 nextItem("testing", "t") # "e"
 */
 
-function nextItem(xs, item) {
-  // TODO: Implement me
+const nextItem = (xs, item) => {
+  for(let i = 0; i < xs.length; i++) {
+    if(xs[i] === item) {
+      return xs[i+1];
+    }
+  }
 }
